@@ -16,9 +16,10 @@ int main(void)
 	{
 		putchar(n);
 	}
-	for (m = 97; m <= 102; m++)
+	for (m = 97; m <= 103; m++)
 	{
 		putchar(m);
 	}
+	putchar('\n');
 	return (0);
 }
