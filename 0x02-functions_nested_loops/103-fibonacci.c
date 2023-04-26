@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - prints the first 50 Fibonacci numbers, starting with 1 and 2,
+ * main - prints the first sum of the first Fibonacci numbers up to 4000000, starting with 1 and 2,
  *
  * Return: Always 0.
  */
