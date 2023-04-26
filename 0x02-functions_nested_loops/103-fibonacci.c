@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long int i, fib1 = 1, fib2 = 2, fib3, sum = 3;
+	long int i, fib1 = 1, fib2 = 2, fib3, sum = 1;
 
 	for (i = 2; i < 50; ++i)
 	{
