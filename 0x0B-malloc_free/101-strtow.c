@@ -4,20 +4,20 @@
 
 /**
  * count_words - helper function to count the number of words in a string
- * @str: string input
+ * @strg: string input
  *
  * Return: number of words
  */
 
-int count_words(char *str)
+int count_words(char *strg)
 {
-	int flag, c, w;
+	int flag = 0, c, w = 0;
 
-	for (c = 0; str[c] != '\0'; c++)
+	for (c = 0; strg[c] != '\0'; c++)
 	{
-		if (str[c] == ' ')
+		if (strg[c] == ' ')
 			flag = 0;
-		else if (flag == 0)
+		if (flag == 0)
 		{
 			flag = 1;
 			w++;
@@ -53,6 +53,7 @@ char **strtow(char *str)
 	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
+		{
 			if (c)
 			{
 				end = i;
@@ -66,6 +67,9 @@ char **strtow(char *str)
 				j++;
 				c = 0;
 			}
+		}
+		else if (c++ == 0)
+			start = i;
 	}
 	p[j] = NULL;
 	return (p);
