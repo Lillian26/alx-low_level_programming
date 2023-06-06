@@ -24,6 +24,7 @@ listint_t *insert_nodeint_at_index(listint_t **head
 	{
 		n_node->next = *head;
 		*head = n_node;
+		return (n_node);
 	}
 	while (t_node->next != NULL && idx < count)
 	{
